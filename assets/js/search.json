@@ -1,0 +1,50 @@
+{
+    "baseUrl": "https://cmpsc302-spring-2025-alleghenycollege.github.io/project3-phacks",
+    "sitemap": [
+      {
+        "url": "/index.html",
+        "badge": "home",
+        "title": "Home"
+      },
+      {
+        "url": "/pages/about.html",
+        "badge": "page",
+        "title": "About"
+      },
+      {
+        "url": "/pages/resources.html",
+        "badge": "resource",
+        "title": "Resources"
+      },
+      {
+        "url": "/pages/settings.html",
+        "badge": "settings",
+        "title": "Settings"
+      },
+      {
+        "url": "/pages/game.html",
+        "badge": "game",
+        "title": "Game - Determined"
+      },
+      {
+        "url": "/pages/resources/resource_one.html",
+        "badge": "resource",
+        "title": "Resource One"
+      },
+      {
+        "url": "/pages/resources/resource_two.html",
+        "badge": "resource",
+        "title": "Resource Two"
+      },
+      {
+        "url": "/pages/events/event_one.html",
+        "badge": "events",
+        "title": "Event One"
+      },
+      {
+        "url": "/pages/events/event_two.html",
+        "badge": "events",
+        "title": "Event Two"
+      }
+    ]
+}

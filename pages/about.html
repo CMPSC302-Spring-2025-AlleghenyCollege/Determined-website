@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Determined</title>
+    <!-- Scripts -->
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/theme_toggle.js"></script>
+    <script src="../assets/js/settings_toggle.js"></script>
+    <script src="../assets/js/alt-text.js"></script>
+    <script src="../assets/js/tts.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="icon" href="../assets/images/logos/favicon.svg" type="favicon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">D</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resources.html" class="nav-link">Resource</a>
+            <a href="settings.html" class="nav-link">Settings</a>
+            <a href="game.html" class="nav-link">Game</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="performSearch()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="about-container">
+            <div class="about-header">
+                <h1>About <span class="accent-text">Determined</span></h1>
+                <h2>Stay strong. Stay sober. Will you?</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-section">
+                    <p>
+                        <span class="lead-text">Determined</span> is an interactive digital experience that puts you in the shoes of someone recovering from substance use disorder (SUD). The goal is to keep your "resist" points higher than your "use" points as you navigate everyday challenges, tough decisions, and unexpected events over the course of a year.
+                    </p>
+                    
+                    <p>
+                        You'll face real-world scenarios—both good and bad—and make choices that shape your recovery journey. Each choice impacts your chances of relapse, which occurs if your "use" points get too high compared to your "resist" points.
+                    </p>
+
+                    <div class="journey-highlight">
+                        <h3>The Recovery Journey</h3>
+                        <p>
+                            Recovery is not a straight line—it's a journey with ups and downs, victories and setbacks. Determined reflects the reality that each day brings new challenges and opportunities. Your choices today affect your path tomorrow, and small decisions can make significant impacts on your recovery over time.
+                        </p>
+                    </div>
+
+                    <div class="about-highlight">
+                        <div class="highlight-item full-width">
+                            <div class="highlight-icon">🛠️</div>
+                            <div class="highlight-text">
+                                <h3>Recovery Tools</h3>
+                                <p>When times get tough, you can use various tools to boost your resistance. These include:</p>
+                                <ul class="tools-list">
+                                    <li>Breathing exercises to stay calm in stressful situations</li>
+                                    <li>Attending support group meetings for encouragement</li>
+                                    <li>Calling a sponsor when you need immediate support</li>
+                                    <li>Physical exercise to improve mental health</li>
+                                    <li>Mindfulness practices to stay present and aware</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="conclusion-text">
+                        Determined is about building empathy and understanding how difficult, complex, and courageous the recovery journey really is.
+                    </p>
+
+                    <div class="cta-container">
+                        <a href="game.html" class="cta-button">Begin Your Journey</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="footer-image email-logo">
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <img src="../assets/images/logos/github_logo.svg" alt="GitHub Logo" class="footer-image github-logo">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

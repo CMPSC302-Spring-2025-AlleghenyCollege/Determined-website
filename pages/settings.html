@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Settings | Determined</title>
+    <!-- Scripts -->
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/theme_toggle.js"></script>
+    <script src="../assets/js/settings_toggle.js"></script>
+    <script src="../assets/js/alt-text.js"></script>
+    <script src="../assets/js/tts.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="icon" href="../assets/images/logos/favicon.svg" type="favicon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">D</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resources.html" class="nav-link">Resource</a>
+            <a href="settings.html" class="nav-link">Settings</a>
+            <a href="game.html" class="nav-link">Game</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="performSearch()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="settings-page-container">
+            <div class="settings-header">
+                <h1>Accessibility Settings</h1>
+                <p>Customize your experience to make it work better for you</p>
+            </div>
+
+            <div class="settings-grid">
+                <!-- Theme Section -->
+                <div class="settings-card" id="theme-settings">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">🎨</div>
+                        <h2>Display Theme</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <div class="settings-option">
+                            <label>Theme Mode</label>
+                            <div class="toggle-switch-container">
+                                <span>Light</span>
+                                <label class="settings-switch">
+                                    <input type="checkbox" id="darkModeToggleSettings">
+                                    <span class="settings-slider"></span>
+                                </label>
+                                <span>Dark</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Vision Section -->
+                <div class="settings-card" id="color-settings">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">👁️</div>
+                        <h2>Color Vision</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <div class="color-modes">
+                            <p>Adjust colors to improve visibility:</p>
+                            <div class="settings-button-group" role="group" aria-label="Color vision modes">
+                                <button id="True" class="settings-button color-button" title="Normal color vision">
+                                    <span class="color-preview standard"></span>
+                                    <span>Standard</span>
+                                </button>
+                                <button id="Prot" class="settings-button color-button" title="Protanopia - red color blindness">
+                                    <span class="color-preview prot"></span>
+                                    <span>Protanopia</span>
+                                </button>
+                                <button id="Deut" class="settings-button color-button" title="Deuteranopia - green color blindness">
+                                    <span class="color-preview deut"></span>
+                                    <span>Deuteranopia</span>
+                                </button>
+                                <button id="Trit" class="settings-button color-button" title="Tritanopia - blue color blindness">
+                                    <span class="color-preview trit"></span>
+                                    <span>Tritanopia</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Settings Section -->
+                <div class="settings-card" id="text-settings">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">📝</div>
+                        <h2>Text & Reading</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <div class="settings-option">
+                            <label>OpenDyslexic Font</label>
+                            <div class="toggle-switch-container">
+                                <span>Off</span>
+                                <label class="settings-switch">
+                                    <input type="checkbox" id="dyslexicFontToggle">
+                                    <span class="settings-slider"></span>
+                                </label>
+                                <span>On</span>
+                            </div>
+                            <div class="settings-info">
+                                <p class="dyslexic-preview">Sample text with OpenDyslexic font</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-option font-size-control">
+                            <label>Font Size</label>
+                            <div class="font-size-slider">
+                                <span>A</span>
+                                <input type="range" id="fontSizeSlider" min="1" max="5" step="1" value="3">
+                                <span>A</span>
+                            </div>
+                            <div class="font-size-buttons">
+                                <button id="x-small" class="settings-button font-button">XS</button>
+                                <button id="small" class="settings-button font-button">S</button>
+                                <button id="medium" class="settings-button font-button">M</button>
+                                <button id="large" class="settings-button font-button">L</button>
+                                <button id="x-large" class="settings-button font-button">XL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Settings Section -->
+                <div class="settings-card" id="audio-settings">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">🔊</div>
+                        <h2>Audio & Speech</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <div class="settings-option">
+                            <label for="ttsToggle">Text-to-Speech</label>
+                            <div class="toggle-switch-container">
+                                <span>Off</span>
+                                <label class="settings-switch">
+                                    <input type="checkbox" id="ttsToggle">
+                                    <span class="settings-slider"></span>
+                                </label>
+                                <span>On</span>
+                            </div>
+                        </div>
+
+                        <div class="settings-option volume-control">
+                            <label for="volumeSlider">Speech Volume</label>
+                            <div class="volume-slider">
+                                <span>🔈</span>
+                                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+                                <span>🔊</span>
+                            </div>
+                        </div>
+
+                        <button id="testSpeechButton" class="settings-button action-button">
+                            <span>Test Speech</span>
+                        </button>
+
+                        <div class="settings-info">
+                            <p>💡 Tip: Select text on any page to read just that selection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alt Text Settings Section -->
+                <div class="settings-card" id="alt-text-settings">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">🖼️</div>
+                        <h2>Image Descriptions</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <div class="settings-option">
+                            <label for="altTextToggle">Show Image Descriptions</label>
+                            <div class="toggle-switch-container">
+                                <span>Off</span>
+                                <label class="settings-switch">
+                                    <input type="checkbox" id="altTextToggle">
+                                    <span class="settings-slider"></span>
+                                </label>
+                                <span>On</span>
+                            </div>
+                        </div>
+                        <div class="settings-info">
+                            <p>Displays text descriptions below images for better accessibility</p>
+                        </div>
+                        <div class="alt-text-preview">
+                            <div class="preview-image" data-alt-text="A sunset over mountains with orange and purple sky">
+                                <img src="../assets/images/bg-gradient-1.jpg" alt="A sunset over mountains with orange and purple sky">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reset & Save Section -->
+                <div class="settings-card settings-actions" id="settings-actions">
+                    <div class="settings-card-header">
+                        <div class="settings-icon">⚙️</div>
+                        <h2>Actions</h2>
+                    </div>
+                    <div class="settings-card-content">
+                        <button id="resetSettingsButton" class="settings-button action-button danger">
+                            <span>Reset to Defaults</span>
+                        </button>
+                        <button id="mainMenuButton" class="settings-button action-button primary">
+                            <span>Return to Home</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="footer-image email-logo">
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <img src="../assets/images/logos/github_logo.svg" alt="GitHub Logo" class="footer-image github-logo">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

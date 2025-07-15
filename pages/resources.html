@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource | Chompers</title>
+    <!-- Scripts -->
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/theme_toggle.js"></script>
+    <script src="../assets/js/settings_toggle.js"></script>
+    <script src="../assets/js/alt-text.js"></script>
+    <script src="../assets/js/tts.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="icon" href="../assets/images/logos/favicon.svg" type="favicon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">D</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resources.html" class="nav-link">Resource</a>
+            <a href="settings.html" class="nav-link">Settings</a>
+            <a href="game.html" class="nav-link">Game</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="performSearch()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="base-body">
+            <div class="base-header">
+                <h1>Resources</h1>
+                <h2>Take the first step. These resources are here to help.</h2>
+            </div>
+
+            <!-- resource Section -->
+            <section class="resource">
+                <!-- Resource Item 1 -->
+                <div class="resource-list">
+                    <div class="resource-container">
+                        <div class="resource-image">
+                            <img src="../assets/images/hotline.jpg" alt="Resource 1">
+                        </div>
+                        <div class="resource-content">
+                            <h3>988 suicide and crisis hotline</h3>
+                            <p>SAMHSA's National Helpline is a free, confidential, 24/7, 365-day-a-year treatment referral and information service (in English and Spanish) for individuals and families facing mental and/or substance use disorders.</p>
+                            <a href="https://www.samhsa.gov/find-help/helplines/national-helpline" class="resource-link" target="_blank">View Resource →</a>
+                        </div>
+                    </div>
+
+                    <!-- Resource Item 2 -->
+                    <div class="resource-container">
+                        <div class="resource-image">
+                            <img src="../assets/images/meeting.png" alt="Resource 2">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Search for drug abuse centers near you</h3>
+                            <p>To find in-person NA meetings near you, enter your location to find your closest NA community for updated and accurate meeting information.</p>
+                            <a href="https://na.org/meetingsearch/find-na/" class="resource-link" target="_blank">View Resource →</a>
+                        </div>
+                    </div>
+
+                        <!-- resource Item 3 -->
+                        <div class="resource-container">
+                            <div class="resource-image">
+                                <img src="../assets/images/worried.jpeg" alt="Resource 3">
+                            </div>
+                            <div class="resource-content">
+                                <h3>Are you worried about a family member or a loved one's drug or alcohol problem?</h3>
+                                <p>Al‑Anon is a mutual support program for people whose lives have been affected by someone else's drinking. </p>
+                                <a href="https://al-anon.org/" class="resource-link" target="_blank">View Resource →</a>
+                            </div>
+                        </div>
+
+
+                        <!-- resource Item 4 -->
+                        <div class="resource-container">
+                            <div class="resource-image">
+                                <img src="../assets/images/lean on.jpg" alt="Resource 4">
+                            </div>
+                            <div class="resource-content">
+                                <h3>Do you need some one to lean on and relate to for support?</h3>
+                                <p>Alcohol anonymous is a mutual support program that aims to help individuals achieve and maintain sobriety by sharing their experiences, strength, and hope with each other.  </p>
+                                <a href="https://www.aa.org/" class="resource-link" target="_blank">View Resource →</a>
+                            </div>
+                        </div>
+
+
+                        <!-- resource Item 5 -->
+                        <div class="resource-container">
+                            <div class="resource-image">
+                                <img src="../assets/images/treatment.jpg" alt="Resource 5">
+                            </div>
+                            <div class="resource-content">
+                                <h3>Want to know how to help or take action now?</h3>
+                                <p>The DEA provides helpful insight and wisdom on treatment and prevention. </p>
+                                <a href="https://www.dea.gov/recovery-resources" class="resource-link" target="_blank">View Resource →</a>
+                            </div>
+                        </div>
+
+                        
+                        <!-- resource Item 6 -->
+                        <div class="resource-container">
+                            <div class="resource-image">
+                                <img src="../assets/images/knowledge.jpg" alt="Resource 6">
+                            </div>
+                            <div class="resource-content">
+                                <h3>Knowledge is power, the more you know the better!</h3>
+                                <p>Become more informed so you know how to help and offer support. </p>
+                                <a href="https://nida.nih.gov/research-topics/parents-educators" class="resource-link" target="_blank">View Resource →</a>
+                            </div>
+                        </div>
+
+                        <!-- resource Item 7 -->
+                        <div class="resource-container">
+                            <div class="resource-image">
+                                <img src="../assets/images/family.jpg" alt="Resource 7">
+                            </div>
+                            <div class="resource-content">
+                                <h3>Are you worried about someone's drug or alcohol problem?</h3>
+                                <p>Al‑Anon is a mutual support program for people whose lives have been affected by someone else's drinking.</p>
+                                <a href="https://al-anon.org/" class="resource-link" target="_blank">View Resource →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="footer-image email-logo">
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <img src="../assets/images/logos/github_logo.svg" alt="GitHub Logo" class="footer-image github-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

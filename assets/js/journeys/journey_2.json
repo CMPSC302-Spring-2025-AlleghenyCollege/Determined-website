@@ -1,0 +1,400 @@
+{
+  "metadata": {
+    "title": "Journey 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "../assets/images/bg-gradient-2.jpg"
+  },
+  "initial_values": {
+    "resist": 50,
+    "use": 50,
+    "unlocked_tools": ["deep_breathing"]
+  },
+  "scene_001": {
+    "title": "Afternoon",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+    "toolkit": ["deep_breathing"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Lorem Ipsum Resource",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "unlock_tool": "journal"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_002b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c"
+      }
+    ]
+  },
+  "scene_002a": {
+    "title": "Lunch",
+    "narration": "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "toolkit": ["deep_breathing", "journal"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003a",
+        "unlock_tool": "meditation"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003c"
+      }
+    ]
+  },
+  "scene_002b": {
+    "title": "Midday",
+    "narration": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.",
+    "toolkit": ["deep_breathing"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003d",
+        "unlock_tool": "grounding"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003f"
+      }
+    ]
+  },
+  "scene_002c": {
+    "title": "Afternoon Struggle",
+    "narration": "Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
+    "toolkit": false,
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003g"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003h"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003i"
+      }
+    ]
+  },
+  "scene_003a": {
+    "title": "Afternoon Activity",
+    "narration": "Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "toolkit": ["deep_breathing", "journal", "meditation"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004c"
+      }
+    ]
+  },
+  "scene_003b": {
+    "title": "Afternoon Reflection",
+    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
+    "toolkit": ["deep_breathing", "journal"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004d",
+        "unlock_tool": "exercise"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004f"
+      }
+    ]
+  },
+  "scene_003d": {
+    "title": "Afternoon Opportunity",
+    "narration": "Placeholder text for afternoon opportunity scene.",
+    "toolkit": ["deep_breathing", "grounding"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004d"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004f"
+      }
+    ]
+  },
+  "scene_003g": {
+    "title": "Finding Support",
+    "narration": "Placeholder text for finding support scene.",
+    "toolkit": false,
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004a",
+        "unlock_tool": {
+          "id": "call_sponsor",
+          "title": "Call Your Sponsor",
+          "description": "Reach out to your sponsor for immediate support and guidance.",
+          "default_resist_cost": 2,
+          "default_use_benefit": 20
+        }
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004c"
+      }
+    ]
+  },
+  "scene_004a": {
+    "title": "Afternoon Success",
+    "narration": "Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem.",
+    "toolkit": true,
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_005b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005c"
+      }
+    ]
+  },
+  "scene_004b": {
+    "title": "Afternoon Challenge",
+    "narration": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+    "toolkit": [
+      {
+        "id": "call_sponsor",
+        "resist_cost": 1,
+        "use_benefit": 25
+      },
+      "deep_breathing"
+    ],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005d",
+        "unlock_tool": "meeting"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_005e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005f"
+      }
+    ]
+  },
+  "scene_004d": {
+    "title": "Afternoon Breakthrough",
+    "narration": "Placeholder text for afternoon breakthrough scene.",
+    "toolkit": ["deep_breathing", "grounding", "exercise"],
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_005e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_005a": {
+    "title": "Afternoon Resolution",
+    "narration": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+    "toolkit": true,
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005b": {
+    "title": "Afternoon Balance",
+    "narration": "Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.",
+    "toolkit": true,
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005c": {
+    "title": "Afternoon Setback",
+    "narration": "Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.",
+    "toolkit": false,
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_005d": {
+    "title": "Afternoon Progress",
+    "narration": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam.",
+    "toolkit": true,
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005e": {
+    "title": "Afternoon Routine",
+    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti.",
+    "toolkit": true,
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005f": {
+    "title": "Afternoon Difficulty",
+    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+    "toolkit": false,
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_win": {
+    "title": "Afternoon Success",
+    "narration": "Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.",
+    "toolkit": true,
+    "end": "win",
+    "choices": []
+  },
+  "scene_relapse": {
+    "title": "Afternoon Relapse",
+    "narration": "Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.",
+    "toolkit": false,
+    "end": "relapse",
+    "choices": []
+  }
+} 

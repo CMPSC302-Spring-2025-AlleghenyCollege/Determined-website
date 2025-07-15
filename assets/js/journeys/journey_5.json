@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "title": "Test Journey",
+    "description": "A simple journey to test that the game mechanics are working correctly. Navigate through a morning routine and make choices that affect your recovery.",
+    "image": "../assets/images/bg-gradient-1.jpg"
+  },
+  "initial_values": {
+    "resist": 75,
+    "use": 30,
+    "unlocked_tools": ["meditation"]
+  },
+  "scene_001": {
+    "title": "Morning Wake-Up",
+    "narration": "You wake up on a Saturday morning feeling refreshed. The sun is streaming through your window, and you have the whole day ahead of you. You think about how to start your day in a way that supports your recovery.\n\nYour phone shows a few text messages from friends, and you notice your sponsor sent you a motivational quote. What's your first move?",
+    "toolkit": true,
+    "choices": [
+      {
+        "label": "Start with a 10-minute meditation session",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 0.5,
+        "next_scene_id": "scene_002",
+        "unlock_tool": "breathing_exercise"
+      },
+      {
+        "label": "Check all your messages immediately",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0.5,
+        "next_scene_id": "scene_003"
+      },
+      {
+        "label": "Get up and make a healthy breakfast",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004"
+      }
+    ]
+  },
+  "scene_002": {
+    "title": "Peaceful Start",
+    "narration": "The meditation session helps center your mind. You feel calm and focused as you finish. Your breathing is steady, and you're reminded of your strength and commitment to recovery.\n\nNow you're ready to tackle the rest of your morning. What's next?",
+    "toolkit": true,
+    "choices": [
+      {
+        "label": "Call your sponsor to check in",
+        "resist_change": 15,
+        "use_change": -10,
+        "time_advance": 0.5,
+        "next_scene_id": "scene_win",
+        "resource_link": {
+          "url": "https://www.samhsa.gov/find-help/national-helpline",
+          "text": "24/7 Support Helpline",
+          "description": "Free, confidential, 24/7 treatment referral and information service for individuals facing mental health and/or substance use disorders."
+        }
+      },
+      {
+        "label": "Go for a morning walk outside",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_win"
+      }
+    ]
+  },
+  "scene_003": {
+    "title": "Digital Distraction",
+    "narration": "You spend time scrolling through messages and social media. Some of the content makes you feel anxious, and you see posts from old friends who are partying. You start to feel a bit disconnected from your recovery goals.\n\nYou realize you need to refocus. How do you get back on track?",
+    "toolkit": ["meditation"],
+    "choices": [
+      {
+        "label": "Put the phone away and do some stretching",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 0.5,
+        "next_scene_id": "scene_004"
+      },
+      {
+        "label": "Continue scrolling and respond to everyone",
+        "resist_change": -10,
+        "use_change": 15,
+        "time_advance": 1,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_004": {
+    "title": "Kitchen Routine",
+    "narration": "In the kitchen, you take your time preparing a nutritious breakfast. The routine feels grounding, and you appreciate taking care of your body. As you cook, you think about your plans for the day.\n\nYou remember you have a choice about how to spend your afternoon. What sounds most supportive of your recovery?",
+    "toolkit": true,
+    "choices": [
+      {
+        "label": "Visit a recovery meeting or support group",
+        "resist_change": 20,
+        "use_change": -15,
+        "time_advance": 2,
+        "next_scene_id": "scene_win",
+        "resource_link": {
+          "url": "https://www.aa.org/find-aa",
+          "text": "Find Local AA Meetings",
+          "description": "Locate Alcoholics Anonymous meetings in your area for ongoing support and community."
+        }
+      },
+      {
+        "label": "Spend time on a creative hobby you enjoy",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 3,
+        "next_scene_id": "scene_win",
+        "unlock_tool": "creative_expression"
+      },
+      {
+        "label": "Decide to isolate and stay home all day",
+        "resist_change": -15,
+        "use_change": 10,
+        "time_advance": 8,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_win": {
+    "title": "Strong Foundation",
+    "narration": "You've successfully navigated your morning and made choices that support your recovery. You feel proud of yourself for staying committed to your goals and using healthy coping strategies.\n\nThis kind of mindful decision-making is building a strong foundation for your continued recovery journey.",
+    "choices": [],
+    "end": "win"
+  },
+  "scene_relapse": {
+    "title": "Warning Signs",
+    "narration": "The choices you made today have led you away from your recovery goals. You're experiencing warning signs that suggest you need to reach out for support and refocus on your recovery strategies.\n\nRemember, setbacks can be learning opportunities. Tomorrow is a new day to start fresh.",
+    "choices": [],
+    "end": "relapse"
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determined - Game</title>
+
+    <!-- Scripts -->
+    <script src="../assets/js/theme_toggle.js"></script>
+    <script src="../assets/js/search.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" data-overlay></div>
+
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">D</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resources.html" class="nav-link">Resource</a>
+            <a href="settings.html" class="nav-link">Settings</a>
+            <a href="game.html" class="nav-link active">Game</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="perform_search()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Use data-resource-display attribute to control whether resources are shown as popup or inline -->
+    <!-- Use data-dev-tools attribute to control whether developer tools are visible (on/off) -->
+    <main id="game-container" data-resource-display="popup" data-dev-tools="off">
+        <!-- Game content wrapper to ensure proper spacing -->
+        <div class="game-content-wrapper">
+            <!-- Story Selection Screen -->
+            <section id="story-select" class="active">
+                <div class="section-content">
+                    <h1>Choose Your Story</h1>
+                    <p class="story-intro">Each path represents a different life experience. The journey of recovery is
+                        personal and unique to everyone.</p>
+
+                    <div class="story-grid">
+                        <!-- Story cards will be generated dynamically from available journey files -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Play Screen -->
+            <section id="game-play" class="hidden">
+                <section id="game-header">
+                    <h1>DETERMINED</h1>
+                    <div class="game-stats">
+                        <div class="stat-container">
+                            <div class="stat-label">RESIST:</div>
+                            <div class="progress-bar-container">
+                                <div id="resist-bar" class="progress-bar"></div>
+                                <span id="resist-score">100</span>
+                            </div>
+                        </div>
+                        <div class="stat-container">
+                            <div class="stat-label">USE:</div>
+                            <div class="progress-bar-container">
+                                <div id="use-bar" class="progress-bar"></div>
+                                <span id="use-score">100</span>
+                            </div>
+                        </div>
+                        <div class="stat-container time">
+                            <div class="stat-label">TIME:</div>
+                            <span id="time">0h</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="scene-box">
+                    <h2 id="scene-title">[Scene Placeholder]</h2>
+                    <p id="scene-narration">Narrative text will appear here...</p>
+
+                    <details id="dev-tools">
+                        <summary>DEV TOOL: Route Tracker</summary>
+                        <p><strong>Current Scene ID:</strong> <span id="route-id">scene_001</span></p>
+                        <p><strong>Path History:</strong> <span id="scene-path">scene_001</span></p>
+                    </details>
+
+                    <div id="choices">
+                        <!-- Choices will be injected dynamically -->
+                    </div>
+
+                    <div id="feedback-container">
+                        <!-- Feedback will be shown here after making a choice -->
+                    </div>
+
+                    <button id="continue-btn" class="hidden">Continue</button>
+                </section>
+
+                <section id="outcome-message" class="hidden">
+                    <!-- Outcome messages like "Relapse" or "Congrats" -->
+                </section>
+
+                <button id="restart-btn" class="hidden">Try Again</button>
+            </section>
+
+            <!-- Resource Popup -->
+            <div id="resource-popup" class="resource-popup">
+                <div class="resource-popup-header">
+                    <h3 class="resource-popup-title">Helpful Resource</h3>
+                    <button id="close-resource-popup" class="resource-popup-close">&times;</button>
+                </div>
+                <div class="resource-popup-content">
+                    <p id="resource-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <a id="resource-link" href="#" class="resource-popup-link" target="_blank">View Resource</a>
+            </div>
+
+            <!-- Tool Unlock Popup -->
+            <div id="tool-unlock-popup" class="resource-popup tool-unlock-popup">
+                <div class="resource-popup-header">
+                    <h3 class="resource-popup-title">New Tool Unlocked!</h3>
+                    <button id="close-tool-unlock-popup" class="resource-popup-close">&times;</button>
+                </div>
+                <div class="tool-unlock-content">
+                    <div class="tool-unlock-icon">🔓</div>
+                    <h4 id="unlocked-tool-title">Tool Name</h4>
+                    <p id="unlocked-tool-description">Tool description will appear here.</p>
+                    <div class="tool-unlock-stats">
+                        <span class="toolkit-resist-cost">Resist Cost: <span id="unlocked-tool-cost">X</span></span>
+                        <span class="toolkit-use-benefit">Use Benefit: <span id="unlocked-tool-benefit">Y</span></span>
+                    </div>
+                </div>
+                <button id="acknowledge-tool-unlock" class="resource-popup-link">Got it!</button>
+            </div>
+
+            <!-- Toolkit Popup -->
+            <div id="toolkit-popup" class="resource-popup toolkit-popup">
+                <div class="resource-popup-header">
+                    <h3 class="resource-popup-title">Recovery Toolkit</h3>
+                    <button id="close-toolkit-popup" class="resource-popup-close">&times;</button>
+                </div>
+                <div class="toolkit-popup-content">
+                    <p class="toolkit-description">These tools can help you manage your urge to use, but will require
+                        some of your resistance.</p>
+                    <div id="toolkit-items">
+                        <!-- Toolkit items will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-overlay" class="popup-overlay"></div>
+        </div>
+    </main>
+
+    <!-- Game Footer - Now independent from game container -->
+    <footer class="game-footer">
+        <div class="game-footer-left">
+            <button id="exit-game-btn" class="exit-button hidden">Exit to Journey Selection</button>
+        </div>
+
+        <!-- Toolkit Button -->
+        <div class="game-footer-center">
+            <button id="toolkit-btn" class="toolkit-button hidden">Recovery Toolkit</button>
+        </div>
+
+        <div class="game-footer-icons">
+            <a href="https://gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="game-footer-icon email-logo">
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <img src="../assets/images/logos/github_logo.svg" alt="GitHub Logo"
+                    class="game-footer-icon github-logo">
+            </a>
+        </div>
+    </footer>
+
+    <script src="../assets/js/game.js"></script>
+</body>
+
+</html>

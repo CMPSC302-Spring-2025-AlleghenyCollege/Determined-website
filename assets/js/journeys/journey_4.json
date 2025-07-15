@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "title": "Relapse Prevention",
+    "description": "Build advanced skills to identify triggers and prevent relapse in challenging situations.",
+    "image": "../assets/images/home-image.jpg"
+  },
+  "initial_values": {
+    "resist": 50,
+    "use": 50
+  },
+  "scene_001": {
+    "title": "Night",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Lorem Ipsum Resource",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_002b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c"
+      }
+    ]
+  },
+  "scene_002a": {
+    "title": "Sleep Preparation",
+    "narration": "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003c"
+      }
+    ]
+  },
+  "scene_002b": {
+    "title": "Late Activity",
+    "narration": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003d"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003f"
+      }
+    ]
+  },
+  "scene_002c": {
+    "title": "Insomnia",
+    "narration": "Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003g"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_003h"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003i"
+      }
+    ]
+  },
+  "scene_003a": {
+    "title": "Rest",
+    "narration": "Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004c"
+      }
+    ]
+  },
+  "scene_003b": {
+    "title": "Dozing",
+    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004d"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004f"
+      }
+    ]
+  },
+  "scene_003c": {
+    "title": "Discomfort",
+    "narration": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel.",
+    "choices": [
+      {
+        "label": "Positive Option: Address feelings with friend",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004g"
+      },
+      {
+        "label": "Neutral Option: Take a break from socializing",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_004h"
+      },
+      {
+        "label": "Negative Option: Avoid future social events",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_004i"
+      }
+    ]
+  },
+  "scene_004a": {
+    "title": "Deep Sleep",
+    "narration": "Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005a"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_005b"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005c"
+      }
+    ]
+  },
+  "scene_004b": {
+    "title": "Dreaming",
+    "narration": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005d"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_005e"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_005f"
+      }
+    ]
+  },
+  "scene_005a": {
+    "title": "Night Restoration",
+    "narration": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005b": {
+    "title": "Night Rejuvenation",
+    "narration": "Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.",
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005c": {
+    "title": "Night Trouble",
+    "narration": "Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_005d": {
+    "title": "Night Recovery",
+    "narration": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam.",
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005e": {
+    "title": "Night Peace",
+    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti.",
+    "choices": [],
+    "end": "win"
+  },
+  "scene_005f": {
+    "title": "Night Struggle",
+    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_win": {
+    "title": "Night Success",
+    "narration": "Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.",
+    "end": "win",
+    "choices": []
+  },
+  "scene_relapse": {
+    "title": "Night Relapse",
+    "narration": "Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.",
+    "end": "relapse",
+    "choices": []
+  }
+} 

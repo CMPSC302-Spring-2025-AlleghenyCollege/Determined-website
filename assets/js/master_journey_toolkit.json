@@ -1,0 +1,100 @@
+{
+  "tools": {
+    "call_mentor": {
+      "id": "call_mentor",
+      "title": "Call Your Mentor",
+      "description": "Reach out to your mentor for support and guidance.",
+      "default_resist_cost": 5,
+      "default_use_benefit": 15,
+      "category": "support"
+    },
+    "meditation": {
+      "id": "meditation",
+      "title": "Mindfulness Meditation",
+      "description": "Take time to center yourself and reduce anxiety.",
+      "default_resist_cost": 3,
+      "default_use_benefit": 10,
+      "category": "mental"
+    },
+    "exercise": {
+      "id": "exercise",
+      "title": "Physical Exercise",
+      "description": "A brief workout to release stress and clear your mind.",
+      "default_resist_cost": 8,
+      "default_use_benefit": 20,
+      "category": "physical"
+    },
+    "meeting": {
+      "id": "meeting",
+      "title": "Attend Support Meeting",
+      "description": "Connect with your recovery community for strength.",
+      "default_resist_cost": 10,
+      "default_use_benefit": 25,
+      "category": "support"
+    },
+    "call_sponsor": {
+      "id": "call_sponsor",
+      "title": "Call Your Sponsor",
+      "description": "Your sponsor has told you to call whenever the urge is strong.",
+      "default_resist_cost": 4,
+      "default_use_benefit": 18,
+      "category": "support"
+    },
+    "aa_community": {
+      "id": "aa_community",
+      "title": "AA Community Connection",
+      "description": "Tap into the AA network you've established.",
+      "default_resist_cost": 5,
+      "default_use_benefit": 20,
+      "category": "support"
+    },
+    "grounding": {
+      "id": "grounding",
+      "title": "Grounding Techniques",
+      "description": "Use the 5-4-3-2-1 sensory awareness exercise to reconnect with the present.",
+      "default_resist_cost": 3,
+      "default_use_benefit": 15,
+      "category": "mental"
+    },
+    "journal": {
+      "id": "journal",
+      "title": "Journaling",
+      "description": "Write down your thoughts and feelings to gain clarity.",
+      "default_resist_cost": 2,
+      "default_use_benefit": 8,
+      "category": "mental"
+    },
+    "deep_breathing": {
+      "id": "deep_breathing",
+      "title": "Deep Breathing",
+      "description": "Take deep, controlled breaths to calm your nervous system.",
+      "default_resist_cost": 1,
+      "default_use_benefit": 5,
+      "category": "mental"
+    },
+    "creative_outlet": {
+      "id": "creative_outlet",
+      "title": "Creative Expression",
+      "description": "Channel your emotions through art, music, or writing.",
+      "default_resist_cost": 4,
+      "default_use_benefit": 12,
+      "category": "mental"
+    },
+    "therapy_skills": {
+      "id": "therapy_skills",
+      "title": "Use Therapy Skills",
+      "description": "Apply techniques learned in therapy to manage cravings.",
+      "default_resist_cost": 5,
+      "default_use_benefit": 17,
+      "category": "mental"
+    },
+    "call_hotline": {
+      "id": "call_hotline",
+      "title": "Call Crisis Hotline",
+      "description": "Reach out to a crisis support line for immediate help.",
+      "default_resist_cost": 3,
+      "default_use_benefit": 25,
+      "category": "emergency"
+    }
+  }
+} 
